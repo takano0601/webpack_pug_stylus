@@ -161,6 +161,7 @@ const app = (env, argv) => {
             loader: 'babel-loader', // 利用するローダー
             query: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-transform-runtime']
             },
           },
         ],
