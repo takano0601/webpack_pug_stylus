@@ -1,10 +1,12 @@
 'use strict';
 import objectFitImages from 'object-fit-images';
 import MicroModal from 'micromodal';
+import console from './modules/console';
 
 const tap = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 $(() => {
+  console();
   // objectfitのポリフィル
   objectFitImages();
   // モーダル
@@ -13,7 +15,7 @@ $(() => {
     awaitCloseAnimation: true,
   });
   // スムーズスクロール
-  smoothScroll();
+  // smoothScroll();
 });
 
 /* スムーズスクロール */
