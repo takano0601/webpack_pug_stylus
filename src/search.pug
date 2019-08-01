@@ -1,0 +1,21 @@
+extends ./_pug/_layout
+
+block vars
+  include ./_pug/_config
+    - var key = "top"
+    - var page = pages[key]
+
+block contents
+  .l-topBlock
+    .p-topLogo
+      img.p-headLogo(src="", alt="Wiz")
+      h1.p-title 企業カルテ
+    .p-linkBlock
+      .c-buttonPrimary
+        a.c-buttonPrimary__inner(href="#")
+          img.c-buttonPrimary__inner__icon
+          h2.c-buttonPrimary__inner__txt 顧客情報を検索
+      .c-buttonPrimary
+        a.c-buttonPrimary__inner(href="#")
+          img.c-buttonPrimary__inner__icon
+          h2.c-buttonPrimary__inner__txt 管理画面のログイン

@@ -6,7 +6,16 @@ block vars
     - var page = pages[key]
 
 block contents
-  h2 page.title
-  .keyvisual_container
-    p.keyvisual_image
-      img(src=image_path+"/top/top_keyvisual.jpg", alt="")
+  .l-topBlock
+    .p-topLogo
+      img.p-headLogo(src="", alt="Wiz")
+      h1.p-title 企業カルテ
+    .p-linkBlock
+      .c-buttonPrimary
+        a.c-buttonInner(href="#")
+          img.c-buttonInner__PrimaryIcon
+          h2.c-buttonInner__PrimaryTxt 顧客情報を検索
+      .c-buttonPrimary
+        a.c-buttonInner(href="#")
+          img.c-buttonInner__PrimaryIcon
+          h2.c-buttonInner__PrimaryTxt 管理画面のログイン

@@ -5,8 +5,5 @@ html(lang="ja")
     include ./include/_inc_head.pug
 
   body(class=key)
-    .l_contents
-      include ./include/_inc_header.pug
-      include ./include/_inc_nav.pug
-      block contents
+    block contents
     include ./include/_inc_footer.pug
